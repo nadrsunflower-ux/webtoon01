@@ -1,0 +1,36 @@
+[
+ {
+  "out": "raw/E1-06.png",
+  "prompt_file": "prompts/E1-06.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E1-07.png",
+  "prompt_file": "prompts/E1-07.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-25.png",
+  "prompt_file": "prompts/E1-25.txt",
+  "aspect_ratio": "21:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ }
+]

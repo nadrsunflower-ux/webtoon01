@@ -1,0 +1,267 @@
+[
+ {
+  "out": "raw/E1-01.png",
+  "prompt_file": "prompts/E1-01.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": []
+ },
+ {
+  "out": "raw/E1-02.png",
+  "prompt_file": "prompts/E1-02.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH4_seah30.png"
+  ]
+ },
+ {
+  "out": "raw/E1-03.png",
+  "prompt_file": "prompts/E1-03.txt",
+  "aspect_ratio": "21:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH4_seah30.png"
+  ]
+ },
+ {
+  "out": "raw/E1-04.png",
+  "prompt_file": "prompts/E1-04.txt",
+  "aspect_ratio": "2:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH4_seah30.png"
+  ]
+ },
+ {
+  "out": "raw/E1-05.png",
+  "prompt_file": "prompts/E1-05.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": []
+ },
+ {
+  "out": "raw/E1-06.png",
+  "prompt_file": "prompts/E1-06.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E1-07.png",
+  "prompt_file": "prompts/E1-07.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-08.png",
+  "prompt_file": "prompts/E1-08.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH2_yuri_jinwoo10.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E1-09.png",
+  "prompt_file": "prompts/E1-09.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-10.png",
+  "prompt_file": "prompts/E1-10.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-11.png",
+  "prompt_file": "prompts/E1-11.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-12.png",
+  "prompt_file": "prompts/E1-12.txt",
+  "aspect_ratio": "3:2",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E1-13.png",
+  "prompt_file": "prompts/E1-13.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-14.png",
+  "prompt_file": "prompts/E1-14.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-15.png",
+  "prompt_file": "prompts/E1-15.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-16.png",
+  "prompt_file": "prompts/E1-16.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E1-17.png",
+  "prompt_file": "prompts/E1-17.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E1-18.png",
+  "prompt_file": "prompts/E1-18.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E1-19.png",
+  "prompt_file": "prompts/E1-19.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E1-20.png",
+  "prompt_file": "prompts/E1-20.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-21.png",
+  "prompt_file": "prompts/E1-21.txt",
+  "aspect_ratio": "3:2",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-22.png",
+  "prompt_file": "prompts/E1-22.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-23.png",
+  "prompt_file": "prompts/E1-23.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-24.png",
+  "prompt_file": "prompts/E1-24.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-25.png",
+  "prompt_file": "prompts/E1-25.txt",
+  "aspect_ratio": "21:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ }
+]

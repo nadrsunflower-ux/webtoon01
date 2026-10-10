@@ -1,0 +1,23 @@
+[
+ {
+  "out": "raw/E1-07A.png",
+  "prompt_file": "prompts/E1-07A.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E1-09B.png",
+  "prompt_file": "prompts/E1-09B.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/E1-09.png"
+  ],
+  "ref_note": "edit"
+ }
+]

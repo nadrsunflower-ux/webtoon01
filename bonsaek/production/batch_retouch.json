@@ -1,0 +1,186 @@
+[
+ {
+  "out": "raw/E1-04R.png",
+  "prompt_file": "prompts/E1-04R.txt",
+  "aspect_ratio": "2:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E1-04R.png"
+  ]
+ },
+ {
+  "out": "raw/E1-10R.png",
+  "prompt_file": "prompts/E1-10R.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E1-10R.png"
+  ]
+ },
+ {
+  "out": "raw/E1-17R.png",
+  "prompt_file": "prompts/E1-17R.txt",
+  "aspect_ratio": "1:1",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E1-17R.png"
+  ]
+ },
+ {
+  "out": "raw/E1-22bR.png",
+  "prompt_file": "prompts/E1-22bR.txt",
+  "aspect_ratio": "1:1",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E1-22bR.png",
+   "raw/E1-21.png"
+  ]
+ },
+ {
+  "out": "raw/E1-23aR.png",
+  "prompt_file": "prompts/E1-23aR.txt",
+  "aspect_ratio": "1:1",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E1-23aR.png",
+   "raw/E1-21.png"
+  ]
+ },
+ {
+  "out": "raw/E1-23bR.png",
+  "prompt_file": "prompts/E1-23bR.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E1-23bR.png",
+   "raw/E1-21.png"
+  ]
+ },
+ {
+  "out": "raw/E2-01R.png",
+  "prompt_file": "prompts/E2-01R.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-01R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-05R.png",
+  "prompt_file": "prompts/E2-05R.txt",
+  "aspect_ratio": "1:1",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-05R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-07R.png",
+  "prompt_file": "prompts/E2-07R.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-07R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-11R.png",
+  "prompt_file": "prompts/E2-11R.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-11R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-15R.png",
+  "prompt_file": "prompts/E2-15R.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-15R.png",
+   "raw/E2-07.png"
+  ]
+ },
+ {
+  "out": "raw/E2-16R.png",
+  "prompt_file": "prompts/E2-16R.txt",
+  "aspect_ratio": "1:1",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-16R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-18R.png",
+  "prompt_file": "prompts/E2-18R.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-18R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-19R.png",
+  "prompt_file": "prompts/E2-19R.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-19R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-20R.png",
+  "prompt_file": "prompts/E2-20R.txt",
+  "aspect_ratio": "3:2",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-20R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-22R.png",
+  "prompt_file": "prompts/E2-22R.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-22R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-23R.png",
+  "prompt_file": "prompts/E2-23R.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-23R.png"
+  ]
+ },
+ {
+  "out": "raw/E2-24R.png",
+  "prompt_file": "prompts/E2-24R.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E2-24R.png"
+  ]
+ }
+]

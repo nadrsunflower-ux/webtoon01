@@ -1,0 +1,16 @@
+[
+ {
+  "out": "sfx/SFX_A.png",
+  "prompt_file": "prompts/SFX_A.txt",
+  "aspect_ratio": "3:2",
+  "quality": "high",
+  "background": "transparent"
+ },
+ {
+  "out": "sfx/SFX_B.png",
+  "prompt_file": "prompts/SFX_B.txt",
+  "aspect_ratio": "3:2",
+  "quality": "high",
+  "background": "transparent"
+ }
+]

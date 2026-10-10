@@ -1,0 +1,52 @@
+[
+ {
+  "out": "raw/E2-11.png",
+  "prompt_file": "prompts/E2-11.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E2-13B.png",
+  "prompt_file": "prompts/E2-13B.txt",
+  "aspect_ratio": "3:2",
+  "quality": "high",
+  "moderation": "low",
+  "refs": []
+ },
+ {
+  "out": "raw/E2-19.png",
+  "prompt_file": "prompts/E2-19.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH1_seah10.png",
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ },
+ {
+  "out": "raw/E2-20A.png",
+  "prompt_file": "prompts/E2-20A.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH2_yuri_jinwoo10.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E2-25A.png",
+  "prompt_file": "prompts/E2-25A.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH2_yuri_jinwoo10.png"
+  ]
+ }
+]

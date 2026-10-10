@@ -1,0 +1,216 @@
+"""2화 「벌거벗은 임금님」 식자 레이아웃 (식자 v2)."""
+from ep01_layout import S, T, P, B, BT, BD, SFX, NOTE, BB, DARK, WHITE
+
+STAGE = "#111220"
+EDGE = "#3a3b55"
+
+BLOCKS = [
+    S(200, DARK),
+    {"type": "logo", "h": 400, "logo_w": 300, "sub": "2화 · 벌거벗은 임금님"},
+    S(120),
+    {"type": "fade", "h": 420, "from": DARK, "to": WHITE},
+    S(60, WHITE),
+    T("학예회 일주일 전, 방과 후 음악실", style="date"),
+    S(30),
+    P("E2-01R", w=690, border=False, bubbles=[
+        BT("임, 임금님은…\n벌거벗었어요!", 0.45, tail=[0.27, 0.26], over=0.30),
+        BT("또 떨렸어.", 0.87, tail=[0.78, 0.28], kind="small", over=0.45),
+    ]),
+    S(90),
+    P("E2-02#1", w=600, x="left", bubbles=[
+        BT("임금님은 벌거벗…", 0.68, tail=[0.56, 0.52], over=0.30),
+        SFX("덜덜", 0.90, 0.70, w=100, rot=6),
+        BD("다시.", 0.86, tail=[1.10, 1.22], kind="small", over=0.30),
+    ]),
+    S(90),
+    P("E2-02#2", w=600, x="right", bubbles=[
+        BT("유리야, 너 진짜\n긴장하면\n다 잊어버리는구나.", 0.27, tail=[0.60, 0.30], over=0.34),
+    ]),
+    S(130),
+    T("나는 유리를 도와주고 싶었다."),
+    S(80),
+    P("E2-03", w=690, border=False, bubbles=[
+        BT("응. 나 아니면 넌 못 해.", 0.36, tail=[0.66, 0.24], over=0.30),
+        SFX("꾸욱", 0.27, 0.235, w=135, rot=-8),
+        BD("고마워, 세아야.\n너 아니었으면 나…", 0.22, tail=[0.38, 0.54], over=0.34),
+    ]),
+    S(100),
+    T("정말로.", style="inner"),
+    S(500),
+    # ── 놀이터 ──
+    P("E2-04", w=690, border=False, bubbles=[
+        BT("짐은! 세상에서 가장\n아름다운 옷을 입었노라!!", 0.31, tail=[0.62, 0.15], kind="shout", over=0.34),
+    ]),
+    S(90),
+    P("E2-05R", w=600, x="left", bubbles=[
+        B("어! 권세아! 해설!\n너도 같이 연습할래?", 0.25, 0.52, tail=[0.56, 0.30]),
+    ]),
+    S(60),
+    P("E2-05#2", w=560, x="right", bubbles=[
+        B("…아니.", 0.80, 0.30, tail=[0.50, 0.44], kind="small"),
+    ]),
+    S(130),
+    P("E2-06#1", w=690, border=False, bubbles=[
+        BT("넌 진짜 목소리 좋더라.", 0.30, tail=[0.38, 0.26], over=0.34),
+        BD("나중에 나 대통령 되면,\n네가 내 연설문 써 줘라!", 0.36, tail=[0.40, 0.36], over=0.30),
+    ]),
+    S(60),
+    P("E2-06F", w=690, border=False, bubbles=[
+        NOTE("멍청이.", 0.78, 0.50, size=36),
+    ]),
+    S(540),
+    # ── 학예회 날 ──
+    T("학예회 날", style="date"),
+    S(30),
+    P("E2-07R", w=690, border=False, bubbles=[
+        BT("세아는 어디 나와?", 0.28, tail=[0.25, 0.44], over=0.34),
+        BD("해설이래요, 해설.\n무대 옆에 서 있대.", 0.50, tail=[0.78, 0.54], over=0.30),
+    ]),
+    S(180),
+    P("E2-08", w=600, bubbles=[
+        BT("유리야, 저기 봐.\n엄마들 다 왔어.", 0.25, tail=[0.58, 0.32], kind="whisper", over=0.30),
+        BD("지난번처럼 떨면…\n다들 웃겠지?", 0.72, tail=[0.64, 0.40], kind="whisper", over=0.30),
+    ]),
+    S(70),
+    P("E2-09#1", w=560, x="left", bubbles=[
+        SFX("덜덜", 0.90, 0.62, w=95, rot=8),
+    ]),
+    S(60),
+    P("E2-09#2", w=560, x="right", bubbles=[
+        BT("괜찮아.\n못 하겠으면 안 해도 돼.", 0.32, kind="whisper", over=0.30),
+        SFX("꼬옥", 0.15, 0.74, w=110, rot=-8),
+        BD("내가 있잖아.", 0.74, kind="whisper", over=0.36),
+    ]),
+    S(170),
+    {"type": "fade", "h": 420, "from": WHITE, "to": STAGE},
+    S(80, STAGE),
+    P("E2-10", w=690, border=False, bubbles=[
+        BT("옛날 옛적, 새 옷을 무척 좋아하는\n임금님이 살았습니다.", 0.58, tail=[0.79, 0.30], kind="box", over=0.30),
+    ]),
+    S(80),
+    P("E2-11#1", w=600, x="left", border_color=EDGE, bubbles=[
+        BT("이 옷은 바보 눈에는\n보이지 않는답니다~", 0.27, tail=[0.38, 0.36], kind="small", over=0.34),
+        BD("오오! 정말 아름답구나!", 0.70, tail=[0.74, 0.58], kind="small", over=0.30),
+    ]),
+    S(70),
+    P("E2-11R", w=690, border=False, bubbles=[
+        SFX("와하하", 0.845, 0.115, w=178, rot=6),
+        BD("그때, 한 아이가 외쳤습니다.", 0.50, kind="box", over=0.30),
+    ]),
+    S(220),
+    P("E2-12", w=600, border_color=EDGE, bubbles=[
+        SFX("덜덜", 0.72, 0.37, w=92, rot=8),
+    ]),
+    S(200),
+    T("……", style="narr_dark"),
+    S(160),
+    T("1초.", style="inner_dark"),
+    S(70),
+    T("2초.", style="inner_dark"),
+    S(70),
+    T("3초.", style="inner_dark"),
+    S(190),
+    P("E2-13#1", w=600, x="left", border_color=EDGE, bubbles=[
+        BT("유리야, 말해!\n어서!", 0.78, tail=[0.46, 0.32], kind="whisper", over=0.40),
+    ]),
+    S(70),
+    P("E2-13B", w=690, border=False, bubbles=[
+        BT("뭐야, 왜 저래?", 0.19, tail=[0.10, 0.48], kind="small", over=0.40),
+        BT("대사 까먹었나 봐…", 0.80, tail=[0.86, 0.46], kind="small", over=0.40),
+        SFX("웅성웅성", 0.50, 0.11, w=190, rot=-3),
+    ]),
+    S(220),
+    P("E2-14#1", w=600, x="right", border_color=EDGE),
+    S(60),
+    P("E2-14R", w=600, x="left", border_color=EDGE, bubbles=[
+        BD("'임금님은 벌거벗었어요!'", 0.58, tail=[0.46, 0.60], kind="box", over=0.25, size=29),
+    ]),
+    S(40),
+    BB(130, B("아이의 외침에, 사람들은 그제야\n진실을 말하기 시작했습니다.", 0.52, 0.5, kind="box")),
+    S(360),
+    P("E2-15R", w=690, border=False, bubbles=[
+        SFX("짝짝짝", 0.27, 0.065, w=122, rot=-6),
+        SFX("짝짝짝", 0.775, 0.125, w=118, rot=7),
+    ]),
+    S(70),
+    P("E2-16#1", w=560, x="right", border_color=EDGE, bubbles=[
+        BT("세아야, 잘했어!", 0.70, tail=[0.43, 0.32], kind="whisper", over=0.40),
+    ]),
+    S(60),
+    P("E2-16R", w=600, x="left", border_color=EDGE),
+    S(120),
+    T("아무도 유리를 보지 않았다.", style="narr_dark"),
+    S(280),
+    P("E2-17", w=690, border=False, bubbles=[
+        BT("감사합니다~!\n감사합니다~!", 0.24, tail=[0.30, 0.38], over=0.34),
+    ]),
+    S(150),
+    P("E2-18R", w=690, border=False),
+    S(320),
+    P("E2-19R", w=600, border_color=EDGE, bubbles=[
+        B("어?", 0.63, 0.10, tail=[0.43, 0.24], kind="shout"),
+        SFX("휘청", 0.83, 0.63, w=170, rot=10),
+    ]),
+    S(60),
+    P("E2-20A", w=690, border=False, bubbles=[
+        BT("진우야!", 0.63, tail=[0.42, 0.13], kind="shout", over=0.50),
+    ]),
+    S(80),
+    P("E2-20R", w=690, border=False, bubbles=[
+        SFX("데구르르", 0.36, 0.20, w=230, rot=-4),
+    ]),
+    S(260),
+    P("E2-21", w=600, border_color=EDGE),
+    S(150),
+    T("나는 발을 뻗었을까?", style="narr_dark"),
+    S(90),
+    T("기억나지 않는다.", style="narr_dark"),
+    S(150),
+    T("다만 왕관은,", "생각보다 가벼웠다.", style="narr_dark"),
+    S(360),
+    T("2026년", style="date_dark"),
+    S(30),
+    P("E2-22R", w=690, border=False),
+    S(100),
+    T("그 왕관은,", "지금도 내 서랍에 있다.", style="narr_dark"),
+    S(260),
+    {"type": "fade", "h": 520, "from": STAGE, "to": WHITE},
+    S(60, WHITE),
+    # ── 보건실 ──
+    T("보건실 앞", style="date"),
+    S(30),
+    P("E2-23R", w=600, x="left", bubbles=[
+        BT("선생님이 다 봤어요.\n진우가 장난치다가\n떨어진 거예요.", 0.62, tail=[0.34, 0.31], over=0.28),
+    ]),
+    S(100),
+    P("E2-23#2", w=690, border=False, bubbles=[
+        BT("나 때문이야…\n내가 대사를 안 해서…", 0.23, tail=[0.36, 0.30], over=0.28),
+        BT("응, 맞아.", 0.83, tail=[0.66, 0.25], kind="small", over=0.45),
+        BD("그래도 괜찮아.\n내가 있잖아.", 0.77, tail=[0.64, 0.42], kind="whisper", over=0.28),
+    ]),
+    S(480),
+    P("E2-24R", w=690, border=False, bubbles=[
+        BT("…괜찮아?\n많이 아파?", 0.17, tail=[0.30, 0.22], kind="small", over=0.36),
+        BT("어! 세아다!\n해설 진짜 멋있었어!", 0.56, tail=[0.78, 0.23], over=0.28),
+        BD("응! 꿰매야 된대.\n흉 남을 거래, 헤헤.", 0.56, tail=[0.78, 0.36], over=0.28),
+    ]),
+    S(240),
+    BB(120, B("근데 세아야.", 0.50, 0.5, tail=[0.62, 1.5])),
+    S(240),
+    P("E2-25A", w=600, bubbles=[
+        BD("나 봤어.", 0.80, tail=[0.60, 0.62], over=0.36, size=30),
+    ]),
+    S(180),
+    BB(110, B("…뭘?", 0.34, 0.5, kind="small")),
+    S(420),
+    P("E2-25#2", w=690, border=False, bubbles=[
+        B("네 발.", 0.83, 0.30, tail=[0.62, 0.26], kind="whisper", size=31),
+    ]),
+    S(640),
+    P("E2-26", w=690, border=False),
+    S(740),
+    T("〈계속〉", style="end", align="right", cx=626),
+    S(220),
+    T("본색 2화 「벌거벗은 임금님」", "기획·각본·콘티·연출 Claude  ·  작화 GPT Image 2.5 Sunburst  ·  식자 코드", style="credit"),
+    S(120),
+]
