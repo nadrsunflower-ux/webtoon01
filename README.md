@@ -6,6 +6,8 @@
 
 ## 보기
 
+연재 사이트: https://webtoon01.vercel.app
+
 로컬에서는 정적 파일을 그대로 띄우면 됩니다.
 
 ```bash
