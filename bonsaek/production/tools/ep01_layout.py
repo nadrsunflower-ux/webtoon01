@@ -65,18 +65,20 @@ BLOCKS = [
     S(240, DARK),
     T("2026년 10월, 국회 의원회관", style="date_dark"),
     S(40),
-    P("E1-01#1", w=600, border_color="#2b2e3a"),
+    P("E1-01R", w=600, border_color="#2b2e3a", bubbles=[
+        SFX("쏴아아", 0.66, 0.21, w=104, rot=4),
+    ]),
     S(80),
     P("E1-01#2", w=560, x="right", border_color="#2b2e3a", bubbles=[
         B("보좌관님 어디 계세요?\n의원님 무대 5분 전입니다.", 0.30, 0.20, kind="phone", size=21),
         SFX("지이잉", 0.26, 0.74, w=190, rot=-5),
     ]),
     S(180),
-    P("E1-02F", w=690, border=False),
+    P("E1-02R", w=690, border=False),
     S(130),
     T("사람들은 나를", "'괜찮은 사람'이라고 불렀다.", style="narr_dark"),
     S(80),
-    P("E1-03F", w=690, border=False),
+    P("E1-03F", w=690, border=False, crop=[0.0, 0.0, 0.90, 1.0]),
     S(150),
     T("나도 그런 줄 알았다.", style="narr_dark"),
     S(160),
@@ -93,7 +95,7 @@ BLOCKS = [
     S(30),
     P("E1-05", w=690, border=False),
     S(150),
-    P("E1-06", w=690, border=False, bubbles=[
+    P("E1-06R", w=690, border=False, bubbles=[
         BT("자, 이 문제\n풀어 볼 사람?", 0.79, tail=[0.86, 0.20], over=0.36),
         BT("저요! 저요!!", 0.26, tail=[0.48, 0.32], kind="shout", over=0.45),
     ]),
@@ -121,11 +123,11 @@ BLOCKS = [
     S(40),
     T("아는 척하는 어른과는", "가까이하지 않는다."),
     S(150),
-    P("E1-09B", w=690, border=False),
+    P("E1-09C", w=690, border=False, crop=[0.006, 0.008, 0.994, 0.992]),
     S(100),
     T("규칙은 하나씩 늘어 갔다.", style="inner"),
     S(280),
-    P("E1-10R", w=690, border=False, bubbles=[
+    P("E1-10S", w=690, border=False, crop=[0.006, 0.008, 0.994, 0.992], bubbles=[
         BT("미, 미안해!\n미안…", 0.62, tail=[0.57, 0.24], over=0.26),
         BT("백유리 또야?", 0.20, tail=[0.27, 0.20], kind="small", over=0.36),
         SFX("와르르", 0.20, 0.915, w=235, rot=-7),
@@ -135,7 +137,7 @@ BLOCKS = [
     S(100),
     T("쉬운 애는 한눈에 보인다."),
     S(150),
-    P("E1-11", w=690, border=False, bubbles=[
+    P("E1-11R", w=690, border=False, bubbles=[
         BT("괜찮아?\n내가 주워 줄게.", 0.47, tail=[0.66, 0.24], over=0.34),
         BT("…고마워.", 0.115, tail=[0.21, 0.28], kind="small", over=0.55),
     ]),
@@ -148,14 +150,14 @@ BLOCKS = [
         BD("이 연극의 교훈은 뭘까요?\n바로, 정직이에요.", 0.31, tail=[0.33, 0.55], over=0.36),
     ]),
     S(140),
-    P("E1-13", w=560, bubbles=[
+    P("E1-13R", w=560, bubbles=[
         BT("임금님 할 사람?", 0.17, tail=[-0.10, -0.03], kind="small", over=0.30),
         B("저요!!\n제가 임금님 할래요!!", 0.10, 0.40, tail=[0.47, 0.30], kind="shout", size=25),
     ]),
     S(160),
-    P("E1-14#1", w=600, x="left", bubbles=[
+    P("E1-14aR", w=600, x="left", bubbles=[
         BT("그리고 '임금님은 벌거벗었어요!'\n하고 외치는 아이는…\n유리가 해 볼까?", 0.60, tail=[1.12, 0.04], kind="small", over=0.25),
-        BD("제, 제가요?", 0.24, tail=[0.46, 0.52], over=0.45),
+        BD("제, 제가요?", 0.24, tail=[0.48, 0.50], over=0.45),
         BD("유리는 거짓말을\n못 하는 얼굴이잖니.", 0.78, tail=[1.12, 0.96], kind="small", over=0.30),
     ]),
     S(120),
@@ -166,14 +168,14 @@ BLOCKS = [
     S(140),
     T("해설은 무대 옆에 선다.", "아무도 해설을 보지 않는다."),
     S(90),
-    P("E1-15", w=690, border=False, bubbles=[
+    P("E1-15R", w=690, border=False, bubbles=[
         NOTE("하지만 이야기는,\n해설이 한다.", 0.50, 0.90, size=33),
     ]),
     S(480),
     # ── 저녁 식탁 ──
     T("그날 저녁", style="date"),
     S(30),
-    P("E1-16", w=690, border=False, bubbles=[
+    P("E1-16R", w=690, border=False, bubbles=[
         BT("학예회? 우리 세아는\n무슨 역 하는데?", 0.29, tail=[0.25, 0.34], over=0.30),
         BT("해설이요.", 0.66, tail=[0.56, 0.40], kind="small", over=0.42),
     ]),
@@ -183,20 +185,20 @@ BLOCKS = [
         BD("괜히 나서는 역 하지 마.\n가만히 있으면 중간은 가.", 0.50, tail=[0.70, 0.56], over=0.30),
     ]),
     S(130),
-    P("E1-17R", w=600, x="right", bubbles=[
-        BT("우리 세아는 착해서\n걱정이 없어.", 0.28, tail=[0.58, 0.30], over=0.30),
-        B("응.", 0.06, 0.52, tail=[0.20, 0.52], kind="small"),
+    P("E1-17R", w=600, x="right", crop=[0.006, 0.008, 0.994, 0.78], bubbles=[
+        BT("우리 세아는 착해서\n걱정이 없어.", 0.28, tail=[0.58, 0.385], over=0.30),
+        B("응.", 0.06, 0.667, tail=[0.20, 0.667], kind="small"),
     ]),
     S(130),
     T("엄마 아빠에게는", "괜찮은 딸만 보여 준다."),
     S(260),
-    P("E1-18#1", w=620, bubbles=[
+    P("E1-18aR", w=620, bubbles=[
         BT("세아야, 혹시 엄마 지갑에서\n만 원짜리 한 장 못 봤어?", 0.42, tail=[0.80, 0.22], kind="small", over=0.30),
         BD("아니? 엄마가 또\n어디 뒀겠지.", 0.26, tail=[0.46, 0.60], over=0.34),
         BD("그런가…?\n엄마가 요즘 정신이 없네.", 0.80, tail=[0.88, 0.40], kind="small", over=0.28),
     ]),
     S(150),
-    P("E1-18#2", w=690, border=False),
+    P("E1-18bR", w=690, border=False),
     S(120),
     T("돈이 필요했던 건 아니다."),
     S(30),
@@ -205,12 +207,12 @@ BLOCKS = [
     # ── 첫 연습 ──
     T("일주일 뒤, 첫 연습", style="date"),
     S(30),
-    P("E1-19", w=690, border=False, bubbles=[
+    P("E1-19R", w=690, border=False, bubbles=[
         BT("임금님은\n벌거벗었어요!", 0.47, tail=[0.33, 0.24], kind="shout", over=0.34),
         BD("와아, 유리 잘한다!", 0.20, tail=[0.20, 0.72], kind="small", over=0.40),
     ]),
     S(120),
-    P("E1-20#1", w=560, x="left", bubbles=[
+    P("E1-20aR", w=560, x="left", bubbles=[
         BT("나… 잘했어?", 0.76, tail=[0.58, 0.44], over=0.34),
     ]),
     S(60),
@@ -223,7 +225,7 @@ BLOCKS = [
     T("너무 잘했다."),
     S(580),
     # ── 신발장 ──
-    P("E1-21", w=690, border=False, bubbles=[
+    P("E1-21R", w=690, border=False, bubbles=[
         B("유리야.", 0.87, 0.14, tail=[0.73, 0.13], kind="small"),
         B("응?", 0.12, 0.25, tail=[0.27, 0.40], kind="small"),
     ]),
@@ -237,18 +239,18 @@ BLOCKS = [
         BD("나, 잘했는데…\n다들 박수 쳤잖아…", 0.66, tail=[0.56, 0.74], over=0.30),
     ]),
     S(140),
-    P("E1-23aR", w=620, bubbles=[
-        BT("그거, 웃겨서 친 거야.", 0.24, tail=[0.42, 0.26], over=0.26),
-        BT("너 목소리 엄청 떨렸어.", 0.76, tail=[0.52, 0.27], over=0.26),
-        BD("진우가 뒤에서 흉내도 냈어.", 0.34, tail=[0.44, 0.40], over=0.34),
+    P("E1-23aR", w=620, crop=[0.006, 0.008, 0.994, 0.60], bubbles=[
+        BT("그거, 웃겨서 친 거야.", 0.24, tail=[0.40, 0.40], over=0.26),
+        BT("너 목소리 엄청 떨렸어.", 0.76, tail=[0.50, 0.42], over=0.26),
+        BD("진우가 뒤에서 흉내도 냈어.", 0.36, tail=[0.43, 0.52], over=0.34),
     ]),
     S(130),
-    P("E1-23bR", w=560, bubbles=[
+    P("E1-23cR", w=560, bubbles=[
         BT("진짜…?", 0.16, tail=[0.42, 0.50], kind="small", over=0.50),
         BD("나… 몰랐어…", 0.82, tail=[0.60, 0.62], kind="small", over=0.45),
     ]),
     S(150),
-    P("E1-24", w=690, border=False, bubbles=[
+    P("E1-24R", w=690, border=False, bubbles=[
         B("내가 연습\n도와줄게.", 0.17, 0.115, tail=[0.56, 0.17], kind="small", group="h"),
         B("대신 이건 우리 둘만의\n비밀이야.", 0.21, 0.243, kind="small", group="h"),
         SFX("꼬옥", 0.26, 0.58, w=150, rot=-8),

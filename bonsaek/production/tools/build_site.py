@@ -91,8 +91,8 @@ def build_assets():
     for sh in ("SH1_seah10", "SH2_yuri_jinwoo10", "SH3_adults2006", "SH4_seah30", "SH5_adults2026"):
         sizes[sh] = save_jpg(PROD / "sheets" / (sh + ".png"), ASSETS / "sheets" / (sh + ".jpg"), width=1400)
     # 회차 썸네일 16:9
-    sizes["t1"] = save_jpg(PROD / "raw/E1-02F.png", ASSETS / "thumb_ep01.jpg", width=480, crop=[0.0, 0.18, 1.0, 0.60])
-    sizes["t2"] = save_jpg(PROD / "raw/E2-21.png", ASSETS / "thumb_ep02.jpg", width=480, crop=[0.0, 0.05, 1.0, 0.47])
+    sizes["t1"] = save_jpg(PROD / "raw/E1-02R.png", ASSETS / "thumb_ep01.jpg", width=480, crop=[0.0, 0.18, 1.0, 0.60])
+    sizes["t2"] = save_jpg(PROD / "raw/E2-21R.png", ASSETS / "thumb_ep02.jpg", width=480, crop=[0.0, 0.05, 1.0, 0.47])
     # 콘티 썸네일: 연재에 실제로 쓴 컷만, 쓴 영역 그대로
     conti = ASSETS / "conti"
     conti.mkdir(parents=True, exist_ok=True)
@@ -332,6 +332,8 @@ def page_conti():
     idx = shot_index()
     sections = []
     total_imgs = set()
+    first_pass = {s["id"] for s in shots.EP1 + shots.EP2} - {s["id"] for s in fixes.FIX}
+    n_fixed = 0
     for n in (1, 2):
         lay = importlib.import_module("ep%02d_layout" % n)
         beats = []
@@ -340,6 +342,7 @@ def page_conti():
             if b["type"] == "panel":
                 sid, _, part = b["src"].partition("#")
                 total_imgs.add(sid)
+                n_fixed += sid not in first_pass
                 osid, part = resolve(b["src"], idx)
                 s = idx.get(osid, {})
                 if s.get("layout") == "stack2":
@@ -365,9 +368,9 @@ def page_conti():
     body = topnav("1~2화 콘티") + """<main class="shell doc">
 <header class="doc-head"><p class="eyebrow">콘티 · 작화 지시서</p><h1>1~2화 컷별 연출</h1>
 <p class="lead">Claude가 쓴 컷 지시(구도·연기·빛·손 처리·말풍선 자리)와 실제 생성된 그림, 그리고 식자한 대사를 연재 순서대로 나열했습니다.
-작화 이미지 %d장(2컷을 한 장에 그린 이미지 포함). 검수에서 걸린 27컷은 다시 그리거나 부분 수정했습니다.</p>
+작화 이미지 %d장(2컷을 한 장에 그린 이미지 포함). 연재본 컷 가운데 %d컷은 검수에서 걸려 다시 그리거나 부분 수정한 그림입니다.</p>
 <div class="spec"><h3>모든 컷에 공통으로 들어간 화풍 블록</h3><p>%s</p></div></header>
-%s</main>""" % (len(total_imgs), E(shots.STYLE.replace("[화풍] ", "")), "".join(sections)) + footer()
+%s</main>""" % (len(total_imgs), n_fixed, E(shots.STYLE.replace("[화풍] ", "")), "".join(sections)) + footer()
     return doc("본색 1~2화 콘티", body, desc="컷별 연출 지시와 생성 이미지, 대사")
 
 
