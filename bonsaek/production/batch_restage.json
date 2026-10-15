@@ -1,44 +1,46 @@
 [
  {
-  "out": "raw/_cand/E6-05bN1.png",
-  "prompt_file": "prompts/E6-05bN.txt",
+  "out": "raw/_cand/E6-03U1.png",
+  "prompt_file": "prompts/E6-03U.txt",
   "aspect_ratio": "4:3",
   "quality": "high",
   "moderation": "low",
   "refs": [
-   "sheets/SH10_bomi.png"
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH1_seah10.png"
   ]
  },
  {
-  "out": "raw/_cand/E6-05bN2.png",
-  "prompt_file": "prompts/E6-05bN.txt",
+  "out": "raw/_cand/E6-03U2.png",
+  "prompt_file": "prompts/E6-03U.txt",
   "aspect_ratio": "4:3",
   "quality": "high",
   "moderation": "low",
   "refs": [
-   "sheets/SH10_bomi.png"
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH1_seah10.png"
   ]
  },
  {
-  "out": "raw/_cand/E6-06N1.png",
-  "prompt_file": "prompts/E6-06N.txt",
+  "out": "raw/_cand/E6-03U3.png",
+  "prompt_file": "prompts/E6-03U.txt",
   "aspect_ratio": "4:3",
   "quality": "high",
   "moderation": "low",
   "refs": [
-   "sheets/SH8_jinwoo_outfits.png",
-   "sheets/SH2_yuri_jinwoo10.png"
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH1_seah10.png"
   ]
  },
  {
-  "out": "raw/_cand/E6-06N2.png",
-  "prompt_file": "prompts/E6-06N.txt",
+  "out": "raw/_cand/E6-03U4.png",
+  "prompt_file": "prompts/E6-03U.txt",
   "aspect_ratio": "4:3",
   "quality": "high",
   "moderation": "low",
   "refs": [
-   "sheets/SH8_jinwoo_outfits.png",
-   "sheets/SH2_yuri_jinwoo10.png"
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH1_seah10.png"
   ]
  }
 ]
