@@ -134,9 +134,11 @@ TEXT_STYLE = {
     "big":        ("serif_b", 46, 1.55, "#111016"),
     "big_dark":   ("serif_b", 46, 1.55, "#f4f1fa"),
     "end":        ("sans_x",  38, 1.5, "#111016"),
+    "end_dark":   ("sans_x",  38, 1.5, "#f4f1fa"),
     "byline_k":   ("sans_x",  26, 1.5, "#111016"),
     "byline":     ("sans",    24, 1.5, "#6f6a7a"),
     "credit":     ("sans",    14, 1.7, "#8a8597"),
+    "credit_dark": ("sans",   14, 1.7, "#8f8aa3"),
     "date":       ("serif",   22, 1.5, "#4b4757"),
     "date_dark":  ("serif",   22, 1.5, "#bdb8cc"),
 }

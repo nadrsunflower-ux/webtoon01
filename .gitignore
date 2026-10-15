@@ -6,6 +6,8 @@ __pycache__/
 bonsaek/production/comp/
 # 밑그림·교체 전 원본·생성 로그
 bonsaek/production/raw/_*
+# 작가가 수정 요청으로 넣는 스크린샷(N-k = N화의 k번째 수정)
+bonsaek/production/edit/
 # 식자용 폰트는 tools/fetch_fonts.sh 로 받는다
 bonsaek/production/fonts/
 

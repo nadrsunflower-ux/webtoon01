@@ -39,6 +39,18 @@ EPISODES = [
     {"no": 2, "title": "벌거벗은 임금님", "thumb": "assets/thumb_ep02.jpg",
      "summary": "학예회 당일, 무대 위에서 얼어붙은 유리. 세아는 그 대사를 가져가고, 박수 속에서 진우가 무대 아래로 떨어진다. 그리고 보건실에서, 진우가 웃는다.",
      "hook": "진우는 그날 무엇을 봤을까. 그리고 왜, 아무에게도 말하지 않았을까.", "minutes": 4},
+    {"no": 3, "title": "목격자", "thumb": "assets/thumb_ep03.jpg",
+     "summary": "무대 아래로 떨어진 진우. 세아는 누가 묻기 전에 먼저 울며 이야기를 만든다. 그날 밤 아빠는 혼자 캠코더 테이프를 돌려 보고, 진우는 끝내 아무에게도 말하지 않는다.",
+     "hook": "그날, 세아도 골라졌다.", "minutes": 4},
+    {"no": 4, "title": "생일 초대장", "thumb": "assets/thumb_ep04.jpg",
+     "summary": "학예회 이후 '대사 까먹은 애'가 된 유리. 생일 초대장 열두 장을 대신 전해 주겠다는 세아. 토요일 오후, 풍선으로 꾸민 거실에는 아무도 오지 않는다.",
+     "hook": "유리에게는, 세아 하나면 충분했다.", "minutes": 3},
+    {"no": 5, "title": "엄마의 거짓말", "thumb": "assets/thumb_ep05.jpg",
+     "summary": "도매 반찬을 '직접 만든 것'이라 파는 엄마에게서 세아는 착한 거짓말의 문법을 배운다. 그리고 학예회 날의 비밀을 본 반장 보미에게, 그 문법을 처음 써 본다.",
+     "hook": "착한 거짓말은 모두를 기분 좋게 한다. 보미만 빼고.", "minutes": 4},
+    {"no": 6, "title": "정직 우체통", "thumb": "assets/thumb_ep06.jpg",
+     "summary": "담임이 만든 익명 쪽지함 '정직 우체통'. 세아는 왼손으로 쓴 쪽지 몇 장으로 반의 여론을 움직이고, 담임은 마침내 그 글씨를 알아본다.",
+     "hook": "어른들은, 알고 싶지 않은 것은 모른다.", "minutes": 3},
 ]
 CREDIT = ("「본색」은 오리지널 창작 웹툰입니다. 기획·각본·콘티·연출은 Claude, 작화는 AI 이미지 생성"
           "(GPT Image 2.5 Sunburst · OpenRouter)으로 만들었고, 말풍선·내레이션 식자와 효과음 배치는 코드로 넣었습니다.")
@@ -93,6 +105,8 @@ def build_assets():
     # 회차 썸네일 16:9
     sizes["t1"] = save_jpg(PROD / "raw/E1-02R.png", ASSETS / "thumb_ep01.jpg", width=480, crop=[0.0, 0.18, 1.0, 0.60])
     sizes["t2"] = save_jpg(PROD / "raw/E2-21R.png", ASSETS / "thumb_ep02.jpg", width=480, crop=[0.0, 0.05, 1.0, 0.47])
+    for n, src in ((3, "E3-09"), (4, "E4-11M"), (5, "E5-08"), (6, "E6-01N")):     # 3~6화: 16:9 컷 그대로
+        sizes["t%d" % n] = save_jpg(PROD / "raw" / (src + ".png"), ASSETS / ("thumb_ep%02d.jpg" % n), width=480)
     # 콘티 썸네일: 연재에 실제로 쓴 컷만, 쓴 영역 그대로
     conti = ASSETS / "conti"
     conti.mkdir(parents=True, exist_ok=True)
@@ -138,15 +152,15 @@ def page_index(full=True):
       <h1 id="series-title">%s</h1>
       <p class="logline">%s</p>
       <p class="synopsis">%s</p>
-      <ul class="tags"><li>15세 이용가</li><li>4부 60화 기획</li><li>1~2화 공개</li></ul>
+      <ul class="tags"><li>15세 이용가</li><li>4부 60화 기획</li><li>1~%d화 공개</li></ul>
       <div class="actions"><a class="btn primary" href="ep01.html">1화부터 보기</a><a class="btn" href="plan.html">기획서와 전체 스토리보드</a></div>
     </div>
   </section>
 
   <section class="block" aria-labelledby="eps">
-    <div class="block-head"><h2 id="eps">회차</h2><span>1~2화 · 2026년 10월</span></div>
+    <div class="block-head"><h2 id="eps">회차</h2><span>1~%d화 · 2026년 10월</span></div>
     <ol class="ep-list">%s</ol>
-    <p class="note">3화부터 60화까지는 <a href="plan.html#storyboard">전체 스토리보드</a>에 회차별 장면과 끊는 지점까지 정리되어 있습니다.</p>
+    <p class="note">%d화부터 60화까지는 <a href="plan.html#storyboard">전체 스토리보드</a>에 회차별 장면과 끊는 지점까지 정리되어 있습니다.</p>
   </section>
 
   <section class="block program" aria-labelledby="cast">
@@ -164,7 +178,8 @@ def page_index(full=True):
     </div>
   </section>
 </main>
-""" % (E(GENRE), SERIES, E(LOGLINE), E(SYNOPSIS), "".join(cards), cast_rows) + footer()
+""" % (E(GENRE), SERIES, E(LOGLINE), E(SYNOPSIS), len(EPISODES), len(EPISODES), "".join(cards), len(EPISODES) + 1,
+       cast_rows) + footer()
     return doc("본색", body, desc=LOGLINE, full=full)
 
 
@@ -403,8 +418,8 @@ def write_conti_md():
 
 def main():
     build_assets()
-    pages = {"index.html": page_index(), "ep01.html": page_episode(EPISODES[0]), "ep02.html": page_episode(EPISODES[1]),
-             "characters.html": page_characters(), "plan.html": page_plan(), "conti.html": page_conti()}
+    pages = {"index.html": page_index(), "characters.html": page_characters(), "plan.html": page_plan(), "conti.html": page_conti()}
+    pages.update({"ep%02d.html" % ep["no"]: page_episode(ep) for ep in EPISODES})
     for name, text in pages.items():
         (SITE / name).write_text(text)
     art = PROD / "artifact"

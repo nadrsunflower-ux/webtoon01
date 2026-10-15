@@ -1,0 +1,215 @@
+[
+ {
+  "out": "raw/E5-01.png",
+  "prompt_file": "prompts/E5-01.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH3_adults2006.png",
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E5-02.png",
+  "prompt_file": "prompts/E5-02.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E5-03.png",
+  "prompt_file": "prompts/E5-03.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH3_adults2006.png",
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E5-04.png",
+  "prompt_file": "prompts/E5-04.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E5-05.png",
+  "prompt_file": "prompts/E5-05.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH1_seah10.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E5-06.png",
+  "prompt_file": "prompts/E5-06.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH10_bomi.png",
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E5-07.png",
+  "prompt_file": "prompts/E5-07.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH10_bomi.png",
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E5-08.png",
+  "prompt_file": "prompts/E5-08.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH10_bomi.png",
+   "sheets/SH8_jinwoo_outfits.png"
+  ]
+ },
+ {
+  "out": "raw/E5-09.png",
+  "prompt_file": "prompts/E5-09.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH3_adults2006.png",
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E5-10.png",
+  "prompt_file": "prompts/E5-10.txt",
+  "aspect_ratio": "4:3",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH10_bomi.png"
+  ]
+ },
+ {
+  "out": "raw/E5-11.png",
+  "prompt_file": "prompts/E5-11.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH3_adults2006.png",
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E5-12.png",
+  "prompt_file": "prompts/E5-12.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH10_bomi.png",
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E5-13.png",
+  "prompt_file": "prompts/E5-13.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH3_adults2006.png"
+  ]
+ },
+ {
+  "out": "raw/E5-14.png",
+  "prompt_file": "prompts/E5-14.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH6_seah_outfits.png",
+   "sheets/SH9_adults_outfits.png",
+   "sheets/SH8_jinwoo_outfits.png",
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E5-15.png",
+  "prompt_file": "prompts/E5-15.txt",
+  "aspect_ratio": "16:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH10_bomi.png"
+  ]
+ },
+ {
+  "out": "raw/E5-16.png",
+  "prompt_file": "prompts/E5-16.txt",
+  "aspect_ratio": "3:4",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH6b_seah_outfits.png",
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E5-17.png",
+  "prompt_file": "prompts/E5-17.txt",
+  "aspect_ratio": "9:16",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH6b_seah_outfits.png",
+   "sheets/SH1_seah10.png"
+  ]
+ },
+ {
+  "out": "raw/E5-18.png",
+  "prompt_file": "prompts/E5-18.txt",
+  "aspect_ratio": "21:9",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "sheets/SH6b_seah_outfits.png",
+   "sheets/SH1_seah10.png"
+  ]
+ }
+]

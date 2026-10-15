@@ -1,0 +1,22 @@
+[
+ {
+  "out": "raw/_cand/E3-02aR1.png",
+  "prompt_file": "prompts/E3-02aR.txt",
+  "aspect_ratio": "1:1",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E3-02aR.png"
+  ]
+ },
+ {
+  "out": "raw/_cand/E3-02aR2.png",
+  "prompt_file": "prompts/E3-02aR.txt",
+  "aspect_ratio": "1:1",
+  "quality": "high",
+  "moderation": "low",
+  "refs": [
+   "raw/_src/E3-02aR.png"
+  ]
+ }
+]
